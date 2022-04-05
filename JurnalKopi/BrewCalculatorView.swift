@@ -7,10 +7,12 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct BrewCalculatorView: View {
     @State private var beansWeight = ""
     @State private var brewRatio = ""
     @State private var waterWeight = ""
+    
+    @ObservedObject var viewModel = BrewCalculatorViewModel()
     
     var body: some View {
         ScrollView {
@@ -19,11 +21,13 @@ struct ContentView: View {
                     Text("Coffee beans")
                         .font(.system(size: 18, weight: .semibold))
                     HStack(alignment: .bottom) {
-                        TextField("20", text: $beansWeight)
+                        TextField(viewModel.beansWeight, text: $viewModel.beansWeight)
                             .font(.system(size: 60, weight: .medium))
                             .multilineTextAlignment(.trailing)
-                            .accentColor(.clear)
-                            .keyboardType(.decimalPad)
+                            .keyboardType(.numberPad)
+                            .onChange(of: viewModel.beansWeight) { newValue in
+                                viewModel.updateBeans(weight: newValue)
+                            }
                         Text("g")
                             .font(.system(size: 30, weight: .medium))
                             .foregroundColor(Color("Color.Primary"))
@@ -41,12 +45,14 @@ struct ContentView: View {
                             .font(.system(size: 60, weight: .medium))
                         Text(":")
                             .font(.system(size: 60, weight: .medium))
-                        TextField("15", text: $brewRatio)
+                        TextField(viewModel.brewRatio, text: $viewModel.brewRatio)
                             .font(.system(size: 60, weight: .medium))
                             .multilineTextAlignment(.trailing)
-                            .accentColor(.clear)
-                            .keyboardType(.decimalPad)
+                            .keyboardType(.numberPad)
                             .fixedSize()
+                            .onChange(of: viewModel.brewRatio) { newValue in
+                                viewModel.updateBrewRatio(ratio: newValue)
+                            }
                     }
                 }
                 .padding()
@@ -55,11 +61,13 @@ struct ContentView: View {
                     Text("Water")
                         .font(.system(size: 18, weight: .semibold))
                     HStack(alignment: .bottom) {
-                        TextField("300", text: $waterWeight)
+                        TextField(viewModel.waterWeight, text: $viewModel.waterWeight)
                             .font(.system(size: 60, weight: .medium))
                             .multilineTextAlignment(.trailing)
-                            .accentColor(.clear)
-                            .keyboardType(.decimalPad)
+                            .keyboardType(.numberPad)
+                            .onChange(of: viewModel.waterWeight) { newValue in
+                                viewModel.updateWater(weight: newValue)
+                            }
                         Text("g")
                             .font(.system(size: 30, weight: .medium))
                             .foregroundColor(Color("Color.Primary"))
@@ -75,6 +83,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        BrewCalculatorView()
     }
 }

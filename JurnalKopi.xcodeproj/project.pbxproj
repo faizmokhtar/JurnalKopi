@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		4AC8D4B327FBBC0300957B10 /* JurnalKopiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC8D4B227FBBC0300957B10 /* JurnalKopiApp.swift */; };
-		4AC8D4B527FBBC0300957B10 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC8D4B427FBBC0300957B10 /* ContentView.swift */; };
+		4AC8D4B527FBBC0300957B10 /* BrewCalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC8D4B427FBBC0300957B10 /* BrewCalculatorView.swift */; };
 		4AC8D4B727FBBC0500957B10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AC8D4B627FBBC0500957B10 /* Assets.xcassets */; };
 		4AC8D4BA27FBBC0500957B10 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AC8D4B927FBBC0500957B10 /* Preview Assets.xcassets */; };
 		4AC8D4C427FBBC0500957B10 /* JurnalKopiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC8D4C327FBBC0500957B10 /* JurnalKopiTests.swift */; };
 		4AC8D4CE27FBBC0500957B10 /* JurnalKopiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC8D4CD27FBBC0500957B10 /* JurnalKopiUITests.swift */; };
 		4AC8D4D027FBBC0500957B10 /* JurnalKopiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC8D4CF27FBBC0500957B10 /* JurnalKopiUITestsLaunchTests.swift */; };
+		4AD60BDD27FBD442001D89D5 /* BrewCalculatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD60BDC27FBD442001D89D5 /* BrewCalculatorViewModel.swift */; };
+		4AD60BE027FBD878001D89D5 /* Brew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD60BDF27FBD878001D89D5 /* Brew.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 /* Begin PBXFileReference section */
 		4AC8D4AF27FBBC0300957B10 /* JurnalKopi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JurnalKopi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AC8D4B227FBBC0300957B10 /* JurnalKopiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JurnalKopiApp.swift; sourceTree = "<group>"; };
-		4AC8D4B427FBBC0300957B10 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4AC8D4B427FBBC0300957B10 /* BrewCalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewCalculatorView.swift; sourceTree = "<group>"; };
 		4AC8D4B627FBBC0500957B10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4AC8D4B927FBBC0500957B10 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4AC8D4BF27FBBC0500957B10 /* JurnalKopiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JurnalKopiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +46,8 @@
 		4AC8D4C927FBBC0500957B10 /* JurnalKopiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JurnalKopiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AC8D4CD27FBBC0500957B10 /* JurnalKopiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JurnalKopiUITests.swift; sourceTree = "<group>"; };
 		4AC8D4CF27FBBC0500957B10 /* JurnalKopiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JurnalKopiUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4AD60BDC27FBD442001D89D5 /* BrewCalculatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewCalculatorViewModel.swift; sourceTree = "<group>"; };
+		4AD60BDF27FBD878001D89D5 /* Brew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brew.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +98,10 @@
 		4AC8D4B127FBBC0300957B10 /* JurnalKopi */ = {
 			isa = PBXGroup;
 			children = (
+				4AD60BDE27FBD86C001D89D5 /* Models */,
 				4AC8D4B227FBBC0300957B10 /* JurnalKopiApp.swift */,
-				4AC8D4B427FBBC0300957B10 /* ContentView.swift */,
+				4AC8D4B427FBBC0300957B10 /* BrewCalculatorView.swift */,
+				4AD60BDC27FBD442001D89D5 /* BrewCalculatorViewModel.swift */,
 				4AC8D4B627FBBC0500957B10 /* Assets.xcassets */,
 				4AC8D4B827FBBC0500957B10 /* Preview Content */,
 			);
@@ -125,6 +131,14 @@
 				4AC8D4CF27FBBC0500957B10 /* JurnalKopiUITestsLaunchTests.swift */,
 			);
 			path = JurnalKopiUITests;
+			sourceTree = "<group>";
+		};
+		4AD60BDE27FBD86C001D89D5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4AD60BDF27FBD878001D89D5 /* Brew.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +271,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4AC8D4B527FBBC0300957B10 /* ContentView.swift in Sources */,
+				4AC8D4B527FBBC0300957B10 /* BrewCalculatorView.swift in Sources */,
+				4AD60BE027FBD878001D89D5 /* Brew.swift in Sources */,
+				4AD60BDD27FBD442001D89D5 /* BrewCalculatorViewModel.swift in Sources */,
 				4AC8D4B327FBBC0300957B10 /* JurnalKopiApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
