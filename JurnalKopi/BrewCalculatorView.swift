@@ -10,7 +10,6 @@ import SwiftUI
 struct BrewCalculatorView: View {
     @State private var beansWeight = ""
     @State private var brewRatio = ""
-    @State private var waterWeight = ""
     
     @ObservedObject var viewModel = BrewCalculatorViewModel()
     
@@ -21,11 +20,11 @@ struct BrewCalculatorView: View {
                     Text("Coffee beans")
                         .font(.system(size: 18, weight: .semibold))
                     HStack(alignment: .bottom) {
-                        TextField(viewModel.beansWeight, text: $viewModel.beansWeight)
+                        TextField(viewModel.beansWeight, text: $beansWeight)
                             .font(.system(size: 60, weight: .medium))
                             .multilineTextAlignment(.trailing)
                             .keyboardType(.numberPad)
-                            .onChange(of: viewModel.beansWeight) { newValue in
+                            .onChange(of: beansWeight) { newValue in
                                 viewModel.updateBeans(weight: newValue)
                             }
                         Text("g")
@@ -45,7 +44,7 @@ struct BrewCalculatorView: View {
                             .font(.system(size: 60, weight: .medium))
                         Text(":")
                             .font(.system(size: 60, weight: .medium))
-                        TextField(viewModel.brewRatio, text: $viewModel.brewRatio)
+                        TextField(viewModel.brewRatio, text: $brewRatio)
                             .font(.system(size: 60, weight: .medium))
                             .multilineTextAlignment(.trailing)
                             .keyboardType(.numberPad)
@@ -61,13 +60,9 @@ struct BrewCalculatorView: View {
                     Text("Water")
                         .font(.system(size: 18, weight: .semibold))
                     HStack(alignment: .bottom) {
-                        TextField(viewModel.waterWeight, text: $viewModel.waterWeight)
+                        Spacer()
+                        Text(viewModel.waterWeight)
                             .font(.system(size: 60, weight: .medium))
-                            .multilineTextAlignment(.trailing)
-                            .keyboardType(.numberPad)
-                            .onChange(of: viewModel.waterWeight) { newValue in
-                                viewModel.updateWater(weight: newValue)
-                            }
                         Text("g")
                             .font(.system(size: 30, weight: .medium))
                             .foregroundColor(Color("Color.Primary"))
