@@ -98,10 +98,9 @@
 		4AC8D4B127FBBC0300957B10 /* JurnalKopi */ = {
 			isa = PBXGroup;
 			children = (
+				4AD60BE127FC8174001D89D5 /* Screens */,
 				4AD60BDE27FBD86C001D89D5 /* Models */,
 				4AC8D4B227FBBC0300957B10 /* JurnalKopiApp.swift */,
-				4AC8D4B427FBBC0300957B10 /* BrewCalculatorView.swift */,
-				4AD60BDC27FBD442001D89D5 /* BrewCalculatorViewModel.swift */,
 				4AC8D4B627FBBC0500957B10 /* Assets.xcassets */,
 				4AC8D4B827FBBC0500957B10 /* Preview Content */,
 			);
@@ -139,6 +138,23 @@
 				4AD60BDF27FBD878001D89D5 /* Brew.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		4AD60BE127FC8174001D89D5 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				4AD60BE227FC8183001D89D5 /* BrewCalculator */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		4AD60BE227FC8183001D89D5 /* BrewCalculator */ = {
+			isa = PBXGroup;
+			children = (
+				4AC8D4B427FBBC0300957B10 /* BrewCalculatorView.swift */,
+				4AD60BDC27FBD442001D89D5 /* BrewCalculatorViewModel.swift */,
+			);
+			path = BrewCalculator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
