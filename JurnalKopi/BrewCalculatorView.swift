@@ -49,7 +49,7 @@ struct BrewCalculatorView: View {
                             .multilineTextAlignment(.trailing)
                             .keyboardType(.numberPad)
                             .fixedSize()
-                            .onChange(of: viewModel.brewRatio) { newValue in
+                            .onChange(of: brewRatio) { newValue in
                                 viewModel.updateBrewRatio(ratio: newValue)
                             }
                     }
