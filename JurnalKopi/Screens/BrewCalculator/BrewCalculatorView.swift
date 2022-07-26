@@ -18,7 +18,7 @@ struct BrewCalculatorView: View {
             VStack {
                 VStack(alignment: .trailing) {
                     Text("Coffee beans")
-                        .font(.system(size: 18, weight: .semibold))
+                        .font(.system(size: 18, weight: .semibold, design: .serif))
                     HStack(alignment: .bottom) {
                         TextField(viewModel.beansWeight, text: $beansWeight)
                             .font(.system(size: 60, weight: .medium))
@@ -37,7 +37,7 @@ struct BrewCalculatorView: View {
                 Divider()
                 VStack(alignment: .trailing) {
                     Text("Brew ratio")
-                        .font(.system(size: 18, weight: .semibold))
+                        .font(.system(size: 18, weight: .semibold, design: .serif))
                     HStack(alignment: .center) {
                         Spacer()
                         Text("1")
@@ -58,7 +58,7 @@ struct BrewCalculatorView: View {
                 Divider()
                 VStack(alignment: .trailing) {
                     Text("Water")
-                        .font(.system(size: 18, weight: .semibold))
+                        .font(.system(size: 18, weight: .semibold, design: .serif))
                     HStack(alignment: .bottom) {
                         Spacer()
                         Text(viewModel.waterWeight)

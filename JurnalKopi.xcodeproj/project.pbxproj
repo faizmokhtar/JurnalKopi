@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A0083F02833E3400084A67C /* ProcessRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0083EF2833E3400084A67C /* ProcessRowView.swift */; };
+		4A086567288E8F20006DA49C /* BrewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A086566288E8F20006DA49C /* BrewView.swift */; };
+		4A2E2634289020A800FD1B7D /* BeanDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2E2633289020A800FD1B7D /* BeanDetailView.swift */; };
 		4AC8D4B327FBBC0300957B10 /* JurnalKopiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC8D4B227FBBC0300957B10 /* JurnalKopiApp.swift */; };
 		4AC8D4B527FBBC0300957B10 /* BrewCalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC8D4B427FBBC0300957B10 /* BrewCalculatorView.swift */; };
 		4AC8D4B727FBBC0500957B10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AC8D4B627FBBC0500957B10 /* Assets.xcassets */; };
@@ -14,8 +17,13 @@
 		4AC8D4C427FBBC0500957B10 /* JurnalKopiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC8D4C327FBBC0500957B10 /* JurnalKopiTests.swift */; };
 		4AC8D4CE27FBBC0500957B10 /* JurnalKopiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC8D4CD27FBBC0500957B10 /* JurnalKopiUITests.swift */; };
 		4AC8D4D027FBBC0500957B10 /* JurnalKopiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC8D4CF27FBBC0500957B10 /* JurnalKopiUITestsLaunchTests.swift */; };
+		4AD21041288E9EE600C44C91 /* BeanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD21040288E9EE600C44C91 /* BeanView.swift */; };
+		4AD21043288EC0EB00C44C91 /* BeanListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD21042288EC0EB00C44C91 /* BeanListView.swift */; };
+		4AD21046288EC64500C44C91 /* BrewDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD21045288EC64500C44C91 /* BrewDetailView.swift */; };
 		4AD60BDD27FBD442001D89D5 /* BrewCalculatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD60BDC27FBD442001D89D5 /* BrewCalculatorViewModel.swift */; };
 		4AD60BE027FBD878001D89D5 /* Brew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD60BDF27FBD878001D89D5 /* Brew.swift */; };
+		4AD60BE727FC821C001D89D5 /* BrewListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD60BE627FC821C001D89D5 /* BrewListView.swift */; };
+		4AD60BEC27FC84EB001D89D5 /* TabsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD60BEB27FC84EB001D89D5 /* TabsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +44,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4A0083EF2833E3400084A67C /* ProcessRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessRowView.swift; sourceTree = "<group>"; };
+		4A086566288E8F20006DA49C /* BrewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewView.swift; sourceTree = "<group>"; };
+		4A2E2633289020A800FD1B7D /* BeanDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeanDetailView.swift; sourceTree = "<group>"; };
 		4AC8D4AF27FBBC0300957B10 /* Jurnal Kopi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Jurnal Kopi.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AC8D4B227FBBC0300957B10 /* JurnalKopiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JurnalKopiApp.swift; sourceTree = "<group>"; };
 		4AC8D4B427FBBC0300957B10 /* BrewCalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewCalculatorView.swift; sourceTree = "<group>"; };
@@ -46,8 +57,13 @@
 		4AC8D4C927FBBC0500957B10 /* JurnalKopiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JurnalKopiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AC8D4CD27FBBC0500957B10 /* JurnalKopiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JurnalKopiUITests.swift; sourceTree = "<group>"; };
 		4AC8D4CF27FBBC0500957B10 /* JurnalKopiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JurnalKopiUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4AD21040288E9EE600C44C91 /* BeanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeanView.swift; sourceTree = "<group>"; };
+		4AD21042288EC0EB00C44C91 /* BeanListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeanListView.swift; sourceTree = "<group>"; };
+		4AD21045288EC64500C44C91 /* BrewDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewDetailView.swift; sourceTree = "<group>"; };
 		4AD60BDC27FBD442001D89D5 /* BrewCalculatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewCalculatorViewModel.swift; sourceTree = "<group>"; };
 		4AD60BDF27FBD878001D89D5 /* Brew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brew.swift; sourceTree = "<group>"; };
+		4AD60BE627FC821C001D89D5 /* BrewListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewListView.swift; sourceTree = "<group>"; };
+		4AD60BEB27FC84EB001D89D5 /* TabsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +91,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A2E26322890208A00FD1B7D /* BeanDetail */ = {
+			isa = PBXGroup;
+			children = (
+				4A2E2633289020A800FD1B7D /* BeanDetailView.swift */,
+			);
+			path = BeanDetail;
+			sourceTree = "<group>";
+		};
 		4AC8D4A627FBBC0300957B10 = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +156,23 @@
 			path = JurnalKopiUITests;
 			sourceTree = "<group>";
 		};
+		4AD2103F288E9E6E00C44C91 /* BeanList */ = {
+			isa = PBXGroup;
+			children = (
+				4AD21042288EC0EB00C44C91 /* BeanListView.swift */,
+				4AD21040288E9EE600C44C91 /* BeanView.swift */,
+			);
+			path = BeanList;
+			sourceTree = "<group>";
+		};
+		4AD21044288EC63200C44C91 /* BrewDetail */ = {
+			isa = PBXGroup;
+			children = (
+				4AD21045288EC64500C44C91 /* BrewDetailView.swift */,
+			);
+			path = BrewDetail;
+			sourceTree = "<group>";
+		};
 		4AD60BDE27FBD86C001D89D5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +184,11 @@
 		4AD60BE127FC8174001D89D5 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				4AD60BEA27FC822E001D89D5 /* Tabs */,
+				4AD60BE327FC81A1001D89D5 /* BrewList */,
+				4AD21044288EC63200C44C91 /* BrewDetail */,
+				4AD2103F288E9E6E00C44C91 /* BeanList */,
+				4A2E26322890208A00FD1B7D /* BeanDetail */,
 				4AD60BE227FC8183001D89D5 /* BrewCalculator */,
 			);
 			path = Screens;
@@ -155,6 +201,24 @@
 				4AD60BDC27FBD442001D89D5 /* BrewCalculatorViewModel.swift */,
 			);
 			path = BrewCalculator;
+			sourceTree = "<group>";
+		};
+		4AD60BE327FC81A1001D89D5 /* BrewList */ = {
+			isa = PBXGroup;
+			children = (
+				4AD60BE627FC821C001D89D5 /* BrewListView.swift */,
+				4A0083EF2833E3400084A67C /* ProcessRowView.swift */,
+				4A086566288E8F20006DA49C /* BrewView.swift */,
+			);
+			path = BrewList;
+			sourceTree = "<group>";
+		};
+		4AD60BEA27FC822E001D89D5 /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				4AD60BEB27FC84EB001D89D5 /* TabsView.swift */,
+			);
+			path = Tabs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,8 +351,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AD21043288EC0EB00C44C91 /* BeanListView.swift in Sources */,
+				4AD60BEC27FC84EB001D89D5 /* TabsView.swift in Sources */,
+				4AD21046288EC64500C44C91 /* BrewDetailView.swift in Sources */,
+				4A2E2634289020A800FD1B7D /* BeanDetailView.swift in Sources */,
+				4AD60BE727FC821C001D89D5 /* BrewListView.swift in Sources */,
 				4AC8D4B527FBBC0300957B10 /* BrewCalculatorView.swift in Sources */,
+				4AD21041288E9EE600C44C91 /* BeanView.swift in Sources */,
 				4AD60BE027FBD878001D89D5 /* Brew.swift in Sources */,
+				4A086567288E8F20006DA49C /* BrewView.swift in Sources */,
+				4A0083F02833E3400084A67C /* ProcessRowView.swift in Sources */,
 				4AD60BDD27FBD442001D89D5 /* BrewCalculatorViewModel.swift in Sources */,
 				4AC8D4B327FBBC0300957B10 /* JurnalKopiApp.swift in Sources */,
 			);
@@ -447,7 +519,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"JurnalKopi/Preview Content\"";
 				DEVELOPMENT_TEAM = 96ZJY6AYCD;
 				ENABLE_PREVIEWS = YES;
@@ -476,7 +548,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"JurnalKopi/Preview Content\"";
 				DEVELOPMENT_TEAM = 96ZJY6AYCD;
 				ENABLE_PREVIEWS = YES;

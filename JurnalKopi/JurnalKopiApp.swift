@@ -11,7 +11,7 @@ import SwiftUI
 struct JurnalKopiApp: App {
     var body: some Scene {
         WindowGroup {
-            BrewCalculatorView()
+            TabsView()
         }
     }
 }
